@@ -1,38 +1,92 @@
-<html>
-    <body>
-        <script src="comparador.js"></script>
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-        <h1>Comparador de Operador</h1>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparador de Operadores</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="comparador.js"></script>
+</head>
 
-        <input id="1">
-        <p>==</p>
-        <input id="2">
-        <button onclick="MostrarValorIgual()">Comparar</button><br><br><br><br>
+<body>
+<br><br>
+<h1>Comparador de Operador</h1>
+<br><br><br>
 
-        <input id="3">
-        <p>!=</p>
-        <input id="4">
-        <button onclick="MostrarValorDiferente()">Comparar</button><br><br><br><br>
+<!--IGUALDADE-->
+  <div class="container">
+    <div class="left"> 
+      <input type="text" id="1"><p>==</p>
+    </div>
+    <div class="right">
+      <input type="text" id="2">
+      <button class="button button5" onclick="MostrarValorIgual()">Comparar</button> 
+    </div>  
+  </div>
 
-        <input id="5">
-        <p>></p>
-        <input id="6">
-        <button onclick="MostrarValorMaior()" >Comparar</button><br><br><br><br>
+<!--DIFERENTE-->
 
-        <input id="7">
-        <p>>=</p>
-        <input id="8">
-        <button onclick="MostrarValorMaiorIgual()" >Comparar</button><br><br><br><br>
+<div class="container">
+  <div class="left"> 
+    <input type="text" id="3"> <p>!=</p> 
+  </div>
+  <div class="right">
+    <input type="text" id="4">
+    <button class="button button5" onclick="MostrarValorDiferente()">Comparar</button> 
+  </div>  
+</div>
 
-        <input id="9">
-        <p> <  </p> 
-        <input id="10">
-        <button onclick="MostrarValorMenor()" >Comparar</button><br><br><br><br>
+<!--VALOR MAIOR-->
 
-        <input id="11">
-        <p> <=  </p>
-        <input id="12">
-        <button onclick="MostrarValorMenorIgual()" >Comparar</button><br><br><br><br>
+<div class="container">
+  <div class="left"> 
+    <input type="text" id="5"> <p>></p> 
+  </div>
+  <div class="right">
+    <input type="text" id="6">
+    <button class="button button5" onclick="MostrarValorMaior()">Comparar</button> 
+  </div>  
+</div>
 
-    </body>
+<!--VALOR MAIOR OU IGUAL-->
+
+<div class="container">
+  <div class="left"> 
+    <input type="text" id="7"> <p>>=</p> 
+  </div>
+  <div class="right">
+    <input type="text" id="8">
+    <button class="button button5" onclick="MostrarValorMaiorIgual()">Comparar</button> 
+  </div>  
+</div>
+
+<!--VALOR MENOR-->
+
+<div class="container">
+  <div class="left"> 
+    <input type="text" id="9"> <p><</p> 
+  </div>
+  <div class="right">
+    <input type="text" id="10">
+    <button class="button button5" onclick="MostrarValorMenor()">Comparar</button> 
+  </div>  
+</div>
+
+<!--VALOR MENOR OU IGUAL-->
+
+<div class="container">
+  <div class="left"> 
+    <input type="text" id="11"> <p><=</p> 
+  </div>
+  <div class="right">
+    <input type="text" id="12">
+    <button class="button button5" onclick="MostrarValorMenorIgual()">Comparar</button> 
+  </div>  
+</div>
+
+
+</body>
+
 </html>
